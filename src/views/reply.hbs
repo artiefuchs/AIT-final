@@ -1,0 +1,14 @@
+<br>
+{{#each messages}}
+        {{title}}  {{message}}
+        {{#reply}}<br>{{this}}{{/reply}}
+{{/each}}
+<br>
+<br>
+<form method="POST" action="">
+  <div>
+    <label for="title">Reply:</label>
+    <input type="text" id="reply" name="reply" value="">
+  </div>
+  <input type="submit" value="Post">
+</form>
